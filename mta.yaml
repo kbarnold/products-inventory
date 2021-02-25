@@ -20,7 +20,7 @@ modules:
     disk-quota: 256M
     memory: 256M
     routes:
-    - route: https://products-inventory-${org}-${space}.${default-domain}
+    - route: https://products-inventory-CIForCustomers-${space}.${default-domain}
 - name: products-inventory-deployer
   type: com.sap.application.content
   path: .
@@ -51,7 +51,7 @@ resources:
   parameters:
     config:
       tenant-mode: dedicated
-      xsappname: products-inventory-${org}
+      xsappname: products-inventory-CIForCustomers
     service: xsuaa
     service-plan: application
 - name: products-inventory-html5-repo-runtime
